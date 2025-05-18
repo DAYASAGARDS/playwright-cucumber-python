@@ -24,8 +24,6 @@ playwright-cucumber-python
 │   └── config.py
 ├── tests
 │   └── __init__.py
-├── conftest.py
-├── pytest.ini
 ├── environment.py
 ├── requirements.txt
 └── README.md
