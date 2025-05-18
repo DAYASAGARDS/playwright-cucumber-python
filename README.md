@@ -39,7 +39,7 @@ playwright-cucumber-python
 
 1. **Clone the Repository**:
    ```
-   git clone <repository-url>
+   git clone https://github.com/DAYASAGARDS/playwright-cucumber-python.git
    cd playwright-cucumber-python
    ```
 
