@@ -46,12 +46,26 @@ playwright-cucumber-python
    ```
 
 2. **Install Dependencies**:
+   
+   Create virtual environment
+   ```
+   python -m venv venv
+   ```
+   Activate venv
+   On Windows:
+   ```
+   venv\Scripts\activate
+   ```
+   On Mac/Linux:
+   ```
+   source venv/bin/activate
+   ```
    Ensure you have Python installed, then run:
    ```
    pip install -r requirements.txt
    ```
 
-3. **Run Tests**:
+4. **Run Tests**:
    You can run the tests using Behave:
    ```
    behave
