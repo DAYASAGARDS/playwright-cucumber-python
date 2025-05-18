@@ -30,7 +30,8 @@ playwright-cucumber-python
 ├── requirements.txt
 └── README.md
 ```
-
+# Playwright Cucumber Python Framework
+...
 ## Features
 
 - **Login Feature**: Automates the login process to the OrangeHRM application.
@@ -51,9 +52,15 @@ playwright-cucumber-python
    ```
 
 3. **Run Tests**:
-   You can run the tests using pytest:
+   You can run the tests using Behave:
    ```
-   pytest
+   behave
+   ```
+   
+   To generate Allure reports:
+   ```
+   behave -f allure_behave.formatter:AllureFormatter -o allure-results
+   allure serve allure-results
    ```
 
 ## Usage Guidelines
