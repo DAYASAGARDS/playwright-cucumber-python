@@ -43,27 +43,26 @@ playwright-cucumber-python
    cd playwright-cucumber-python
    ```
 
-2. **Install Dependencies**:
-   
+2. **Using PIP and Virtual env Install Dependencies**:
+   If you want to use UV skip to Setp 4. Ensure you have Python installed, then run:
    Create virtual environment
    ```
    python -m venv venv
    ```
    Activate venv
-   On Windows:
+      * On Windows:
    ```
    venv\Scripts\activate
    ```
-   On Mac/Linux:
+      * On Mac/Linux:
    ```
    source venv/bin/activate
    ```
    Ensure you have Python installed, then run:
    ```
    pip install -r requirements.txt
-   ```
 
-4. **Run Tests**:
+3. **Run Tests**:
    You can run the tests using Behave:
    ```
    behave
@@ -74,6 +73,36 @@ playwright-cucumber-python
    behave -f allure_behave.formatter:AllureFormatter -o allure-results
    allure serve allure-results
    ```
+
+4. **UV Setup and Run**:
+
+   Install UV
+      
+      * Windows
+   
+   ```
+      powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+   ```
+      * MAC /Linux 
+   
+   ```
+      curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+   After installing make sure you restart terminal.
+   ```
+      uv init
+      uv add playwright behave allure-behave
+      uv tree
+   ```
+   You can run the tests using Behave:
+   ```
+   uv run behave
+   ```
+   
+   To generate Allure reports:
+   ```
+   uv run behave -f allure_behave.formatter:AllureFormatter -o allure-results
+   allure serve allure-results
 
 ## Usage Guidelines
 
