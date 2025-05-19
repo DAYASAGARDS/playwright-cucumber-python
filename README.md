@@ -74,7 +74,7 @@ playwright-cucumber-python
    allure serve allure-results
    ```
 
-4. **UV Setup and Run**:
+4. **UV Setup and Run ( only if you want to use UV)**:
 
    Install UV
       
