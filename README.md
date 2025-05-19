@@ -7,6 +7,7 @@ This project is a test automation framework built using Playwright and Cucumber 
 ```
 playwright-cucumber-python
 ├── features
+|   ├── environment.py
 │   ├── login.feature
 │   ├── employee_list.feature
 │   └── steps
@@ -24,7 +25,6 @@ playwright-cucumber-python
 │   └── config.py
 ├── tests
 │   └── __init__.py
-├── environment.py
 ├── requirements.txt
 └── README.md
 ```
